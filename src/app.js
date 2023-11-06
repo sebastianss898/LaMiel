@@ -10,4 +10,8 @@ const app = express()
 app.set('port', comfig.port)
 app.use(productsRoutes)
 
+//midlewars
+app.use(express.json)
+app.use(express.urlencoded({extended:false}))
+
 export default app

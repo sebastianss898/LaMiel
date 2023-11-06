@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getProducts } from "../controllers/products.controller";
+import { cretaNewColmena, getProducts } from "../controllers/products.controller";
 
 
 const router = Router();
@@ -8,7 +8,7 @@ router.get("/products",getProducts);
 
 router.get("/products",getProducts);
 
-router.post("/products",getProducts);
+router.post("/products", cretaNewColmena);
 
 router.delete("/products",getProducts);
 
