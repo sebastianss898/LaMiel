@@ -1,14 +1,15 @@
 import { Router } from "express";
-import { cretaNewColmena, getProducts } from "../controllers/products.controller";
+import { createPruebas, getProducts, getByID } from "../controllers/products.controller";
+
 
 
 const router = Router();
 
 router.get("/products",getProducts);
 
-router.get("/products",getProducts);
+router.get("/products/:id",getByID);
 
-router.post("/products", cretaNewColmena);
+router.post("/products", createPruebas);
 
 router.delete("/products",getProducts);
 

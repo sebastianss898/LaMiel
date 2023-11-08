@@ -19,3 +19,5 @@ export async function getConection() {
     console.error(error)
   }
 }
+
+export {sql};
